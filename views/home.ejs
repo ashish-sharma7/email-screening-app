@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Screening App</title>
+</head>
+<body>
+  <div>
+    <h1>Email Screening App</h1>
+    <ul id="email-list">
+      <% emails.forEach(email => { %>
+        <li>
+          Sender: <%= email.senderName %>,
+          Email: <%= email.emailId %>,
+          Body: <%= email.emailBody %>,
+          Received: <%= email.receivedTime %>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</body>
+</html>
